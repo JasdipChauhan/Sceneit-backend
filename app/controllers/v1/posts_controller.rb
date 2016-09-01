@@ -5,6 +5,12 @@ class V1::PostsController < ApplicationController
     render :index, status: :ok
   end
 
+  def show
+    @post = Post.find(params[:id])
+
+    render json: @post || {}, status: :ok
+  end
+
   def create
     @post = current_user.posts.build(
       title: params[:title],
