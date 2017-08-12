@@ -17,7 +17,7 @@ class V1::PostsController < ApplicationController
   end
 
   def destroy
-    @post = current_user.contacts.where(id: params[:id]).first
+    @post = current_user.posts.where(id: params[:id]).first
     if @post.destroy
       head(:ok) #return only the header
     else
