@@ -1,12 +1,12 @@
 class V1::PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    @posts = current_user.posts.all
     render :index, status: :ok
   end
 
   def create
-    @post = Post.new(
+    @post = current_user.posts.build(
       title: params[:title],
       description: params[:description],
       likes: 0
@@ -17,7 +17,7 @@ class V1::PostsController < ApplicationController
   end
 
   def destroy
-    @post = Post.where(id: params[:id]).first
+    @post = current_user.contacts.where(id: params[:id]).first
     if @post.destroy
       head(:ok) #return only the header
     else
