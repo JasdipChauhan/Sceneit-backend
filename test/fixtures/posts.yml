@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  description: MyText
+  title: Post1
+  description: This is a great post
   likes: 1
 
 two:
-  title: MyString
-  description: MyText
+  title: Post2
+  description: This is also a great post!
   likes: 1
