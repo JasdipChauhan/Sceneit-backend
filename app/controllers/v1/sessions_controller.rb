@@ -1,5 +1,4 @@
 class V1::SessionsController < ApplicationController
-
   def show
     current_user ? head(:ok) : head(:unauthorized)
   end
@@ -26,6 +25,7 @@ class V1::SessionsController < ApplicationController
 
   def nilify_token_and_save
     current_user&.authentication_token = nil
-    return true if current_user.save
+    return true if current_user&.save
+    false
   end
 end
