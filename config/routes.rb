@@ -6,4 +6,5 @@ Rails.application.routes.draw do
     resources :users, only: [:create]
     # ^ singleton because only one session for the logged in user
   end
+  get '' => 'application#welcome'
 end
