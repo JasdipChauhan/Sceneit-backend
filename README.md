@@ -1,24 +1,7 @@
-# README
+Backend API exposes both REST and GraphQL endpoints.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Token authentication is done through REST and querying for post data can be done through GraphQL
 
-Things you may want to cover:
+Clone repo and play with GraphQL queries at http://localhost:3000/graphiql :+1:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+<img width="1277" alt="screen shot 2017-08-31 at 12 40 12 pm" src="https://user-images.githubusercontent.com/13476292/29935086-9ac18a9c-8e4b-11e7-9d9e-50784561f9b0.png">
