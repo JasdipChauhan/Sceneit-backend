@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class V1::QueriesControllerTest < ActionDispatch::IntegrationTest
+class GraphqlControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end
