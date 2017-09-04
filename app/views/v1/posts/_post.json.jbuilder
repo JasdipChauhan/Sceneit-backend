@@ -3,5 +3,5 @@ json.call(
   :id,
   :title,
   :description,
-  :likes
+  :likes,
 )
